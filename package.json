@@ -1,7 +1,7 @@
 {
   "name": "pokeverse",
   "version": "1.0.0",
-  "description": "",
+  "description": "![logo](https://user-images.githubusercontent.com/44912347/203076292-5dfc6571-420c-4366-9dda-a0410df82b62.jpg)",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx",
@@ -25,5 +25,13 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "parcel": "^2.6.0",
     "process": "^0.11.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damesdev/pokeverse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Damesdev/pokeverse/issues"
+  },
+  "homepage": "https://github.com/Damesdev/pokeverse#readme"
 }

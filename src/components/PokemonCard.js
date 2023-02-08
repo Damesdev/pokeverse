@@ -1,10 +1,11 @@
 import React from 'react';
 
 function PokemonCard({ url, name }) {
-
+console.log(name)
   return (
     <div>
-        pokemon card
+        <p>{name}</p>
+        <img src={url}/>
     </div>
   );
 }
