@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Navigation } from './components/Navigation';
 import { PokemonCard } from './components/PokemonCard';
 import { useState } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
 const LIMIT = 150;
@@ -26,9 +26,9 @@ function App() {
       newPokemon.push(data2)
     }
     
+    console.log(newPokemon)
     setRawPokemon(newPokemon);
     setFilteredPokemon(rawPokemon);
-    console.log(filteredPokemon);
   };
 
   
@@ -41,9 +41,9 @@ function App() {
   return (
     <div data-testid="app">
       <Navigation />
-
-      {filteredPokemon.map(pokemon => <PokemonCard url={pokemon.sprites.front_default} name={pokemon.name}/>)}
-      <PokemonCard />
+      <div className='d-flex flex-lg-wrap justify-content-center mb-3'>
+      {filteredPokemon.map(pokemon => <PokemonCard url={pokemon.sprites.front_default} name={pokemon.name} abilities={pokemon.abilities}/>)}
+      </div>
     </div>
   );
 }
